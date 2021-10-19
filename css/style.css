@@ -1,0 +1,8 @@
+.filmes{
+    display: flex;
+}
+
+.filmes button{
+    background-color: white;
+    border: none;
+}
