@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Selector</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
         
         <div class="addMovie">
             <img id="addMovieIcon" src="images/addMovieIcon.png" alt="">
-            <input type="text" value="Insira um filme">
-            <button><img src="images/plusIcon.png" alt=""></button>
+            <input type="text" id="movieInput" value="Insira um filme">
+            <button id="addButton"><img src="images/plusIcon.png" alt=""></button>
         </div>
         <div class="movies">
             <img id="popcornIcon" src="images/popcornIcon.png" alt="">
@@ -53,9 +54,10 @@
             <button><img src="images/minusIcon.png" alt=""></button>
         </div>
         
-        <button id="sort">Sortear</button>
-        <img class="subDetail" src="images/moviesImage.png" alt="">
+        <a id="sort">Sortear</a>
+        <!-- href="resultado.html" -->
     </main>
+    <script src="javascript/script.js"></script>
     <footer>
         <p>Página criada por Artur Almeida, estudante de ADS e programador</p>
         <div id="links">
