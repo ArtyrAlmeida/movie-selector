@@ -13,17 +13,21 @@ changeButton.addEventListener("click", changeMovies);
 
 function addMovie(){
     movies.push(valorInput.value);
-    console.log(movies[1]);
+    valorInput.value="Insira um filme";
+}
+
+function showMovie(){
+    
 }
 
 function sortMovie(){
     let length = movies.length;
     let index = Math.floor(Math.random()*length);
 
-    showMovie(movies, index);
+    showResult(movies, index);
 }
 
-function showMovie(movies, index){
+function showResult(movies, index){
     initialPage.style.display="none";
     resultPage.style.display="flex";
     sortButton.innerHTML = "Sortear novamente"
