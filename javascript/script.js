@@ -73,4 +73,5 @@ function showResult(movies, index){
 function changeMovies(){
     initialPage.style.display="unset";
     resultPage.style.display="none";
+    sortButton.innerHTML = "Sortear";
 }
