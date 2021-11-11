@@ -80,8 +80,8 @@ h1{
     border: white solid 1px;
 }
 
-.addMovie button{
-    background-color: black;
+.addMovie a{
+    background-color: none;
     border: 0;
     text-decoration: none;
     display: inline;
@@ -89,7 +89,7 @@ h1{
     cursor: pointer;
 }
 
-.addMovie button img{
+.addMovie a img{
     width: 2.5em;
 }
 
@@ -193,7 +193,67 @@ footer{
 
 /*Cellphones*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    .addMovie input{
+        font-size: 1rem;
+    }
+
+    .addMovie{
+        border-width: 2px;
+        padding: 0.5% 1%;
+        width: 42%;
+    }
+    
+    .movies{
+        border-width: 2px;
+        width: 35%;
+    }
+    
+    .addMovie a img{
+        width: 1em;
+    }
+    
+    #addMovieIcon{
+        width: 1.1em;
+        height: 1.1em;
+    }
+
+    .movies p{
+        font-size: 0.8rem;
+    }
+
+    .movies button img{
+        width: 40%;
+    }
+
+    .popcornIcon{
+        width: 13%;
+    }
+
+    #sort, #changeMovies{
+        font-size: 1.2rem;
+        border-width: 2px;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+    #links a img{
+        width: 8%;
+        margin: 1% 1.5%
+    }
+
+    #credits{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
     h1{
         font-size: 3.5rem;
     }
@@ -210,7 +270,7 @@ footer{
         border-width: 2px;
     }
     
-    .addMovie button img{
+    .addMovie a img{
         width: 1.1em;
     }
     
@@ -252,7 +312,7 @@ footer{
         font-size: 1.8rem;
     }
 
-    .addMovie button img{
+    .addMovie a img{
         width: 1.8em;
     }
     
@@ -292,7 +352,7 @@ footer{
         font-size: 4rem;
     }
 
-    .addMovie button img{
+    .addMovie a img{
         width: 4.5em;
     }
     

@@ -23,8 +23,10 @@ changeButton.addEventListener("click", changeMovies);
 
 function addMovie(){
     if(movies.length<=6){
-        movies.push(valorInput.value);
-        valorInput.value="Insira um filme";
+        if(valorInput.value!=""){
+            movies.push(valorInput.value);
+            valorInput.value="";
+        }
     }
     else{
         valorInput.value="Máximo de filmes atingido";
@@ -39,7 +41,7 @@ function removeMovie(i){
 
     showMovie();
 
-    valorInput.value="Insira um filme";
+    valorInput.value="";
     valorInput.style.color="white"; 
 }
 
